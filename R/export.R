@@ -308,7 +308,7 @@ gt_save_webshot <- function(
   rlang::check_installed("webshot2", "to save gt tables as images.")
 
   # Save the image in the working directory
-  webshot2::webshot(
+  webshot::webshot(
     url = paste0("file:///", tempfile_),
     file = filename,
     selector = selector,
